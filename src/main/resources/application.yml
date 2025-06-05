@@ -17,12 +17,12 @@ spring:
       enabled: false
 # gateway 설정을 끄기.
     gateway:
-      enabled: true
+      enabled: false
 # eureka 설정
     discovery:
-      enabled: true
+      enabled: false
   application:
-    name: history-service
+    name: history-service_test
 # circuit-breaker 설정 끄기.
     circuitbreaker:
       enabled: false
