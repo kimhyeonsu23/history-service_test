@@ -17,12 +17,12 @@ spring:
       enabled: false
 # gateway 설정을 끄기.
     gateway:
-      enabled: false
+      enabled: true
 # eureka 설정
     discovery:
-      enabled: false
+      enabled: true
   application:
-    name: history-service_test
+    name: history-service
 # circuit-breaker 설정 끄기.
     circuitbreaker:
       enabled: false
@@ -36,3 +36,9 @@ spring:
     level:
       root: debug
       org.springframework: debug
+jwt:
+  secret: w9vM9r6ZKLEFh82N0UbpVYkRIuv2AfxN
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
+    reactor.netty.http.client: DEBUG

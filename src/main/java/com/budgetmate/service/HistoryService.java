@@ -21,6 +21,7 @@ public class HistoryService {
 	
 	public List<HistoryDto> getHistoryDate(Long userId) {
 		
+		System.out.println("2 : 서비스 실행");
 		return historyQuery.getHistoryDate(userId);
 		
 	}

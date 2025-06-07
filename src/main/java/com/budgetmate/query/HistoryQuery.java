@@ -32,8 +32,10 @@ public class HistoryQuery {
 	
 	public List<HistoryDto> getHistoryDate(Long userId) {
 		
+		System.out.println("3 : 쿼리 실행");
+		System.out.println("userId = " + userId);
 		String sql = "SELECT badge_id, granted_date FROM history WHERE user_id = ?";
-
+		
 		//List<Map<String, Object>> historyDateList = jdbcTemplate.queryForList(sql, userId);
 // jdbcTemplate.queryForList()는 무조건 List<Map<String, Object>>로 반환함. 다른 타입이 지정된 형태로는 받을 수 없음.
 // 왜냐하면 queryForList()는 내부적으로 컬럼명을 String : key, object : vale로 매핑함.
